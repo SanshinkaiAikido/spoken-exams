@@ -5,5 +5,5 @@ echo '* CHECKBASHISMS'
 checkbashisms *.sh
 
 echo '* NON-CJK'
-grep '[ ,\.:()]' *.txt
+grep '[ ,\.:()a-zA-Z0-9]' hiragana/*.txt
 

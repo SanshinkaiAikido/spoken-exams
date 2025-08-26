@@ -78,6 +78,6 @@ For searching in hiragana, the following is practical:
 | movement  | irimi          | いりみ |
 | movement  | tenkan tenshin | てんかん　てんしん |
 | movement  | sabaki |  |
-| side      | uchinote |  |
-| side      | katanote |  |
+| side      | uchinote | うちのて |
+| side      | katanote | かたのて |
 
