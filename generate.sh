@@ -92,14 +92,14 @@ for exam in $(ls hiragana/*); do
         echo $BASE $i
         # fast speed
         FILE=tmp/$BASE\_fast.aac
-        if [ $exam -nt $FILE ]; then
+#        if [ $exam -nt $FILE ]; then
             gtts-cli -l ja -o $FILE $i
-        fi
+#        fi
         # normal speed
         FILE=tmp/$BASE\_normal.aac
-        if [ $exam -nt $FILE ]; then
+#        if [ $exam -nt $FILE ]; then
             gtts-cli -s -l ja -o $FILE $i
-        fi
+#        fi
     done
     # fast speed
     PLAYLIST=playlists/$EXAM\_fast
