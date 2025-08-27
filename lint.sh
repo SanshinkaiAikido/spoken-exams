@@ -4,6 +4,10 @@ set -e
 echo '* CHECKBASHISMS'
 checkbashisms *.sh
 
-echo '* NON-CJK'
-grep '[ ,\.:()a-zA-Z0-9]' hiragana/*.txt
+echo '* GREP CJK'
+grep -n '[ ,\.:()a-zA-Z0-9]' hiragana/*.txt
+grep -n '。。' hiragana/*.txt
+grep -n '：。' hiragana/*.txt
+grep -n '、。' hiragana/*.txt
+grep -n '　　' hiragana/*.txt
 

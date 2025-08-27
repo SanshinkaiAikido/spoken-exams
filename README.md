@@ -65,19 +65,29 @@ For searching in hiragana, the following is practical:
 | technique | nikyo                 | にきょう |
 | technique | sankyo                | さんきょう |
 | technique | yonkyo                | よんきょう |
-| technique | kotegaeshi |  |
-| technique | iriminage |  |
-| technique | shihonage |  |
-| technique | koshinage |  |
-| technique | jiyuwaza | じゆうわざ |
-| direction | omote          | おもて |
-| direction | ura            | うら |
-| movement  | tenkan         | てんかん |
-| movement  | tenshin        | てんしん |
-| movement  | irimi tenkan   | いりみ　てんかん |
-| movement  | irimi          | いりみ |
-| movement  | tenkan tenshin | てんかん　てんしん |
-| movement  | sabaki |  |
-| side      | uchinote | うちのて |
-| side      | katanote | かたのて |
+| technique | kotegaeshi            | こてがえし |
+| technique | iriminage             | いりみなげ |
+| technique | shihonage             | しほうなげ |
+| technique | koshinage             |  |
+| technique | jiyuwaza              | じゆうわざ |
+| direction | omote                 | おもて |
+| direction | ura                   | うら |
+| movement  | tenkan                | てんかん |
+| movement  | tenshin               | てんしん |
+| movement  | irimi tenkan          | いりみ　てんかん |
+| movement  | irimi                 | いりみ |
+| movement  | tenkan tenshin        | てんかん　てんしん |
+| movement  | sabaki                |  |
+| side      | uchinote              | うちのて |
+| side      | katanote              | かたのて |
+| side      | kamihanen             |  |
+| side      | shimohanen            |  |
+|   | jodan | じょうだん |
+|   | chudan | ちゅうだん |
+|   | kuzushi | くずし |
+|   | tori | とり |
+|   | uke | うけ |
+|   | mae-ashi | まえあし |
+|   | ushiro-ashi | うしろあし |
+
 
