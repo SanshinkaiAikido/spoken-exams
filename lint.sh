@@ -1,13 +1,19 @@
 #!/usr/bin/env sh
-set -e
 
 echo '* CHECKBASHISMS'
 checkbashisms *.sh
 
-echo '* GREP CJK'
-grep -n '[ ,\.:()a-zA-Z0-9]' hiragana/*.txt
-grep -n '。。' hiragana/*.txt
-grep -n '：。' hiragana/*.txt
-grep -n '、。' hiragana/*.txt
-grep -n '　　' hiragana/*.txt
+FILES=*.py
+echo '* PYDOCSTYLE'
+pydocstyle --convention=numpy $FILES
+echo '* FLAKE8'
+flake8 --ignore E501 $FILES
+echo '* PYLINT'
+pylint $FILES
+echo '* PYFLAKES'
+pyflakes $FILES
+echo '* PYRIGHT-ALRIGHT'
+pyright-alright $FILES
+echo '* MYPY'
+mypy --ignore-missing-imports $FILES
 

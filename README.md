@@ -29,8 +29,12 @@ The average use will use these files from links elsewhere. The links currently a
 
 Install
 
-    sudo apt-get -y install ffmpeg
-    pip install gtts
+Install
+
+    sudo apt-get -y install python3-pip python3-venv ffmpeg
+    python3 -m venv .venv
+    . .venv/bin/activate
+    pip install -Ur requirements.txt
 
 # Usage
 
@@ -38,11 +42,12 @@ Edit the TXT scripts with a text editor. Use only hiragana and CJK punctation in
 
 # Development
 
-Install
+Install also
 
     sudo apt-get -y install devscripts
+    pip install -Ur requirements_dev.txt
 
-and run `./linst.sh` to lint the shell scripts.
+and run `./lint.sh` to lint the shell scripts.
 
 # Searching
 
