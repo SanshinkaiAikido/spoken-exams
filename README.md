@@ -61,7 +61,7 @@ For searching in hiragana, the following is practical:
 | attack    | katatedori gyakuhanmi | かたてどり　ぎゃくはんみ |
 | attack    | shomenuchi            | しょうめんうち |
 | attack    | ryotedori             | りょうてどり |
-| attack    | katate ryotedori      | かたてりょうてどり |
+| attack    | katate ryotedori      | かたて　りょうてどり |
 | attack    | ushiro ryotedori      | うしろ　りょうてどり |
 | attack    | katadori menuchi      | かたどり　めんうち |
 | attack    | chudantsuki           | ちゅうだんつき |
@@ -74,6 +74,10 @@ For searching in hiragana, the following is practical:
 | technique | iriminage             | いりみなげ |
 | technique | shihonage             | しほうなげ |
 | technique | koshinage             |  |
+| technique | kokyunage             | こきゅうなげ |
+| technique | tenchinage            | てんちなげ |
+| technique | genkeikokyunage       | げんけいこきゅうなげ |
+| technique | jujigarami            | じゅうじがらみ |
 | technique | jiyuwaza              | じゆうわざ |
 | direction | omote                 | おもて |
 | direction | ura                   | うら |
@@ -82,17 +86,21 @@ For searching in hiragana, the following is practical:
 | movement  | irimi tenkan          | いりみ　てんかん |
 | movement  | irimi                 | いりみ |
 | movement  | tenkan tenshin        | てんかん　てんしん |
-| movement  | sabaki                |  |
+| movement  | sabaki                | さばき |
 | side      | uchinote              | うちのて |
 | side      | katanote              | かたのて |
 | side      | kamihanen             |  |
 | side      | shimohanen            |  |
-|   | jodan | じょうだん |
-|   | chudan | ちゅうだん |
-|   | kuzushi | くずし |
-|   | tori | とり |
-|   | uke | うけ |
-|   | mae-ashi | まえあし |
-|   | ushiro-ashi | うしろあし |
+|           | jodan                 | じょうだん |
+|           | chudan                | ちゅうだん |
+|           | kuzushi               | くずし |
+|           | tori                  | とり |
+|           | uke                   | うけ |
+|           | mae-ashi              | まえあし |
+|           | ushiro-ashi           | うしろあし |
 
-
+　と　
+（）
+：
+。
+、

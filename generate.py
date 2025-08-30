@@ -35,10 +35,10 @@ def silence(seconds: int) -> None:
             f='lavfi',
             t=seconds
         ).output(
-            path,
+            str(path),
             acodec='libmp3lame',
             audio_bitrate='64k'
-        ).run()
+        ).global_args('-v', 'quiet').run()
 
 
 def write(base: str, text: str) -> None:
