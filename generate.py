@@ -23,7 +23,13 @@ TRACKS = {
     'shodan': ('13', '14'),
     'nidan': ('15', '16'),
     'sandan': ('17', '18'),
-    'yondan': ('19', '20')}
+    'yondan': ('19', '20'),
+    'hojonokata': ('1', '2'),
+    'tonokata': ('3', '4'),
+    'kodachinokata': ('5', '6'),
+    'x': ('7', '8'),
+    'y': ('9', '10'),
+}
 
 
 def silence(seconds: int) -> None:
@@ -56,18 +62,20 @@ def write(base: str, text: str) -> None:
 def playlists(plf: TextIO, pln: TextIO, exam: str, number: int) -> None:
     """Write playlists."""
     plf.write(f"file '../tmp/{exam}_{number:02}_fast.mp3'\n")
-    plf.write("file '../tmp/silence_03.mp3'\n")
-    plf.write("file '../tmp/haidouzo_fast.mp3'\n")
-    plf.write("file '../tmp/silence_30.mp3'\n")
-    plf.write("file '../tmp/matte_fast.mp3'\n")
-    plf.write("file '../tmp/silence_02.mp3'\n")
+    if not exam.endswith('nokata'):
+        plf.write("file '../tmp/silence_03.mp3'\n")
+        plf.write("file '../tmp/haidouzo_fast.mp3'\n")
+        plf.write("file '../tmp/silence_30.mp3'\n")
+        plf.write("file '../tmp/matte_fast.mp3'\n")
+        plf.write("file '../tmp/silence_02.mp3'\n")
 
     pln.write(f"file '../tmp/{exam}_{number:02}_normal.mp3'\n")
-    pln.write("file '../tmp/silence_03.mp3'\n")
-    pln.write("file '../tmp/haidouzo_normal.mp3'\n")
-    pln.write("file '../tmp/silence_75.mp3'\n")
-    pln.write("file '../tmp/matte_normal.mp3'\n")
-    pln.write("file '../tmp/silence_06.mp3'\n")
+    if not exam.endswith('nokata'):
+        pln.write("file '../tmp/silence_03.mp3'\n")
+        pln.write("file '../tmp/haidouzo_normal.mp3'\n")
+        pln.write("file '../tmp/silence_75.mp3'\n")
+        pln.write("file '../tmp/matte_normal.mp3'\n")
+        pln.write("file '../tmp/silence_06.mp3'\n")
 
 
 def generate(cache: bool = True) -> None:

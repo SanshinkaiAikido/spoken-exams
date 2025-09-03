@@ -1,8 +1,35 @@
 #!/usr/bin/env sh
 set -e
 
-ffmpeg -v quiet -f concat -safe 0 -i playlists/rokkyu_fast -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="1 Rokkyu Fast" -metadata album="Shiken" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=20 -metadata genre="Spoken" -metadata track=1 mp3/01_rokkyu_fast.mp3 -y
-ffmpeg -v quiet -f concat -safe 0 -i playlists/rokkyu_normal -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="2 Rokkyu Normal" -metadata album="Shiken" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=20 -metadata genre="Spoken" -metadata track=2 mp3/02_rokkyu_normal.mp3 -y
+if [ ! -f mp3/01_hojonokata_fast.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/hojonokata_fast -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="1 Hojo No Kata Fast" -metadata album="Kashima Shinden Jikishinkage" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=10 -metadata genre="Spoken" -metadata track=1 mp3/01_hojonokata_fast.mp3 -y
+fi
+if [ ! -f mp3/02_hojonokata_normal.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/hojonokata_normal -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="2 Hojo No Kata Normal" -metadata album="Kashima Shinden Jikishinkage" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=10 -metadata genre="Spoken" -metadata track=2 mp3/02_hojonokata_normal.mp3 -y
+fi
+
+if [ ! -f mp3/03_tonokata_fast.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/tonokata_fast -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="3 To No Kata Fast" -metadata album="Kashima Shinden Jikishinkage" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=10 -metadata genre="Spoken" -metadata track=3 mp3/03_tonokata_fast.mp3 -y
+fi
+if [ ! -f mp3/04_tonokata_normal.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/tonokata_normal -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="4 To No Kata Normal" -metadata album="Kashima Shinden Jikishinkage" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=10 -metadata genre="Spoken" -metadata track=4 mp3/04_tonokata_normal.mp3 -y
+fi
+
+if [ ! -f mp3/05_kodachinokata_fast.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/kodachinokata_fast -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="5 Kodachi No Kata Fast" -metadata album="Kashima Shinden Jikishinkage" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=10 -metadata genre="Spoken" -metadata track=5 mp3/05_kodachinokata_fast.mp3 -y
+fi
+if [ ! -f mp3/06_kodachinokata_normal.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/kodachinokata_normal -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="6 Kodachi No Kata Normal" -metadata album="Kashima Shinden Jikishinkage" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=10 -metadata genre="Spoken" -metadata track=6 mp3/06_kodachinokata_normal.mp3 -y
+fi
+
+exit
+
+if [ ! -f mp3/01_rokkyu_fast.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/rokkyu_fast -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="1 Rokkyu Fast" -metadata album="Shiken" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=20 -metadata genre="Spoken" -metadata track=1 mp3/01_rokkyu_fast.mp3 -y
+fi
+if [ ! -f mp3/02_rokkyu_normal.mp3 ]; then
+    ffmpeg -v quiet -f concat -safe 0 -i playlists/rokkyu_normal -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="2 Rokkyu Normal" -metadata album="Shiken" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=20 -metadata genre="Spoken" -metadata track=2 mp3/02_rokkyu_normal.mp3 -y
+fi
 
 ffmpeg -v quiet -f concat -safe 0 -i playlists/gokyu_fast -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="3 Gokyu Fast" -metadata album="Shiken" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=20 -metadata genre="Spoken" -metadata track=3 mp3/03_gokyu_fast.mp3 -y
 ffmpeg -v quiet -f concat -safe 0 -i playlists/gokyu_normal -i cover.png -map 0:a -map 1:v -c:a copy -c:v copy -id3v2_version 3 -metadata:s:v title="Album cover" -metadata:s:v comment="Cover (front)" -metadata title="4 Gokyu Normal" -metadata album="Shiken" -metadata artist="Sanshinkai Aikido" -metadata album_artist="Sanshinkai Aikido" -metadata date=$(date +%Y) -metadata TRACK_TOTAL=20 -metadata genre="Spoken" -metadata track=4 mp3/04_gokyu_normal.mp3 -y
